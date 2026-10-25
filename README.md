@@ -31,5 +31,5 @@ DOM: выбор элементов, события, создание/удале�
 3 TypeScript (2-3 недели)
 
 Базовые типы, интерфейсы, type, generics, union/intersection types, unknown vs any
-Настройка tsconfig.json, работа с типами в реальном проектк
+Настройка tsconfig.json, работа с типами в реальном проекте
 Задание: переписать проект с п.2 на TypeScript
