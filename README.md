@@ -1,3 +1,4 @@
+# Fullstack-Learning
 # Мой путь в Fullstack-разработку
 
 ## Цель: 
@@ -8,8 +9,6 @@ HTML/CSS: пока не начинала
 JavaScript: пока не начинала
 Git/GitHub: освоила базовый цикл "clone - branch - commit - PR"
 TypeScript/React/Node.js: пока не начинала
-
-# Fullstack-Learning
 
 ## План:
 Фаза 1. Фундамент фронтенда: HTML, CSS, JavaScript/TypeScript (месяцы 1-3)
