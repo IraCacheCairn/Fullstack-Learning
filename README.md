@@ -1,4 +1,3 @@
-# Fullstack-Learning
 # Мой путь в Fullstack-разработку
 ## Цель: стать Fullstack-разработчиком и найти первую работу в этой роли
 ## Текущий уровень: 1. HTML/CSS: пока не начинала; 2. JS: пока не начинала; 3. Git/GitHub:  освоила базовый циклы "clone-branch-commit-PR"; 4. TypeScript/React/Node.js: пока не начинала.
