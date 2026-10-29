@@ -64,6 +64,7 @@ a {
     --color-primary: #3b82f6;
     --color-primary-hover: #2563eb;
     --color-border: #e5e5e5;
+    --color-visited: #7c3aed;
 
     /* Шрифты */
     --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -158,6 +159,10 @@ a {
     transition: color 0.15s ease;
 }
 
+a:visited {
+    color: var(--color-visited);
+}
+
 a:hover {
     color: var(--color-primary-hover);
     text-decoration: underline;
@@ -171,11 +176,7 @@ a:focus-visible {
     border-radius: var(--radius-sm);
 }
 
-a:visited {
-    color: #7c3aed;
-}
-
-/*=======
+/*======
   СПИСКИ
 ========*/
 
