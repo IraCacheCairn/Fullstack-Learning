@@ -109,3 +109,94 @@ body {
     color: var(--color-text);
     background-color: var(--color-bg);
 }
+
+/*===========
+  ТИПОГРАФИКА
+=============*/
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+h1 {
+    font-size: var(--fs-3xl);
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: var(--fs-2xl);
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: var(--fs-xl);
+}
+
+p {
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+p + p {
+    margin-top: var(--space-md);
+}
+
+small {
+    font-size: var(--fs-sm);
+    color: var(--color-text-muted);
+}
+
+/*======
+  Ссылки
+========*/
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+a:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+}
+
+a:visited {
+    color: #7c3aed;
+}
+
+/*=======
+  СПИСКИ
+========*/
+
+/* Возвращаем маркеры спискам внутри секций (навыки, контакты) */
+main ul {
+    list-style: disc;
+    padding-left: var(--space-lg);
+}
+
+main ul li {
+    margin-bottom: var(--space-xs);
+}
+
+main ul li::marker {
+    color: var(--color-primary);
+}
+
+/* В навигации маркеры не нужны */
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: var(--space-md);
+}
