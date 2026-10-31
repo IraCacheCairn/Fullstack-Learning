@@ -64,6 +64,7 @@ a {
     --color-primary: #3b82f6;
     --color-primary-hover: #2563eb;
     --color-border: #e5e5e5;
+    --color-visited: #7c3aed;
 
     /* Шрифты */
     --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -108,4 +109,191 @@ body {
     font-size: var(--fs-base);
     color: var(--color-text);
     background-color: var(--color-bg);
+}
+
+/*===========
+  ТИПОГРАФИКА
+=============*/
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+h1 {
+    font-size: var(--fs-3xl);
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: var(--fs-2xl);
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: var(--fs-xl);
+}
+
+p {
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+p + p {
+    margin-top: var(--space-md);
+}
+
+small {
+    font-size: var(--fs-sm);
+    color: var(--color-text-muted);
+}
+
+/*======
+  Ссылки
+========*/
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+a:visited {
+    color: var(--color-visited);
+}
+
+a:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+}
+
+/*======
+  СПИСКИ
+========*/
+
+/* Возвращаем маркеры спискам внутри секций (навыки, контакты) */
+main ul {
+    list-style: disc;
+    padding-left: var(--space-lg);
+}
+
+main ul li {
+    margin-bottom: var(--space-xs);
+}
+
+main ul li::marker {
+    color: var(--color-primary);
+}
+
+/* В навигации маркеры не нужны */
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: var(--space-md);
+}
+
+/*======================================
+  LAYOUT - контейнер и базовая структура
+========================================*/
+
+.container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--space-lg);
+}
+
+/*===================================
+  Вертикальные отступы между секциями
+=====================================*/
+
+main section {
+    padding-block: var(--space-2xl);    
+}
+
+main section + section {
+    border-top: 1px solid var(--color-border);
+}
+
+/*================
+  HEADER - Flexbox
+==================*/
+
+header {
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
+    padding-block: var(--space-md);
+}
+
+.brand {
+    font-size: var(--fs-lg);
+    letter-spacing: 0;
+}
+
+/*=============
+  SKILLS - Grid
+===============*/
+
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+#skills ul li {
+    background-color: var(--color-bg-alt);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--color-primary);
+    margin-bottom: 0;
+}
+
+/*================
+  FOOTER - Flexbox
+==================*/
+
+footer {
+    background-color: var(--color-bg-alt);
+    border-top: 1px solid var(--color-border);
+    padding-block: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+    text-align: center;
+}
+
+footer nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    color: var(--color-text-muted);
+    font-size: var(--fs-sm);
 }
